@@ -1,0 +1,50 @@
+@import "variables";
+$primary: $yellow-700;
+
+$theme-colors: (
+    "primary": $primary
+);
+
+// extend color , customyour own color
+$custom-color: (
+    "icon-background": rgba(234,88,12,0.25)
+);
+
+$merge-colors: map-merge($theme-colors , $custom-color );
+
+.card-title {
+    font-family: 'Alice', serif;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@import "mixins";
+@import "base";
+@import "button";
+@import "layouts/headers";
+@import "homepages/banner";
+@import "homepages/welcome";
+@import "homepages/keunggulan";
+@import "homepages/menu";
+@import "homepages/gallery";
+@import "homepages/frachise";
+
+@import "layouts/footer";
